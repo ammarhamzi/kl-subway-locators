@@ -9,7 +9,6 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="/static/styles.css" />
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCtJrCwxuLU_U3GkmsDpFTFrckznQlGkbs&libraries=places"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <style>
       body {
@@ -74,6 +73,20 @@
       <div id="answer" style="color: black"></div>
       <div id="map"></div>
     </div>
+    <script>
+      async function initMap() {
+        const response = await fetch("/api/config");
+        const data = await response.json();
+        const apiKey = data.googleMapsApiKey;
+        const mapScript = document.createElement("script");
+        mapScript.src = `https://maps.googleapis.com/maps/api/js?key=${apiKey}&libraries=places`;
+        document.head.appendChild(mapScript);
+
+        mapScript.onload = () => {};
+      }
+
+      document.addEventListener("DOMContentLoaded", initMap);
+    </script>
     <script src="{{ url_for('static', filename='script.js') }}"></script>
   </body>
 </html>
