@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Subway Locators</title>
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/static/styles.css" />
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCtJrCwxuLU_U3GkmsDpFTFrckznQlGkbs&libraries=places"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+      body {
+        background-color: black;
+        color: #fff;
+      }
+      .input-group {
+        max-width: 600px;
+        margin: auto;
+      }
+      #map {
+        height: 500px;
+        width: 100%;
+      }
+      .card {
+        max-width: 600px;
+        margin: auto;
+        margin-top: 20px;
+        margin-bottom: 20px;
+      }
+      .logo {
+        display: block;
+        margin: 20px auto;
+        width: 200px;
+        height: 150px;
+        object-fit: contain;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <img
+        src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Subway_2016_logo.svg/2560px-Subway_2016_logo.svg.png"
+        alt="Subway Logo"
+        class="logo"
+      />
+      <div class="input-group mb-3">
+        <input
+          type="text"
+          class="form-control"
+          id="outletName"
+          placeholder="Enter Outlet Name"
+        />
+        <div class="input-group-append">
+          <button class="btn btn-success" id="searchButton">
+            Search Outlet
+          </button>
+          <button class="btn btn-success" id="resetButton">Reset</button>
+        </div>
+      </div>
+      <div class="input-group mb-3">
+        <input
+          type="text"
+          class="form-control"
+          id="query"
+          placeholder="Enter your question"
+        />
+        <div class="input-group-append">
+          <button class="btn btn-success" id="queryButton">Ask</button>
+        </div>
+      </div>
+      <div id="answer" style="color: black"></div>
+      <div id="map"></div>
+    </div>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+  </body>
+</html>
