@@ -43,7 +43,22 @@ Follow these instructions to set up the project on your local machine.
    pip install -r requirements.txt
    ```
 
-5. **Run the application:**
+5. **Create config.py to store your Google Maps API key:**
+
+Create a file named config.py in the root directory of your project and add the following code:
+```bash
+GOOGLE_MAPS_API_KEY = 'your_api_key_here'
+Create config.js to store your Google Maps API key:
+```
+6. **Create a file named config.js in the static directory of your project and add the following code:**
+
+```bash
+module.exports = {
+  googleMapsApiKey: 'your_api_key_here',
+};
+```
+
+7. **Run the application:**
 
    ```bash
    python app.py
@@ -59,4 +74,4 @@ Pull requests are welcome. For major changes, please open an issue first to disc
 
 ## License
 
-This project is licensed under the MIT License - see the LICENSE file for details.
+This project is licensed under the MIT License.
