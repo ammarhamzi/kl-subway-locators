@@ -1,6 +1,6 @@
 # Subway Locators
 
-This project visualizes Subway outlets on a map and highlights intersections between their catchment areas.
+This project visualizes Subway outlets in KL on a map and highlights intersections between their catchment areas.
 
 ## Getting Started
 
@@ -12,6 +12,7 @@ Follow these instructions to set up the project on your local machine.
 - **FastAPI**: To handle API requests.
 - **Bootstrap**: For the frontend interface.
 - **NLP**: To handle user queries.
+- **Geocoding**: To display maps and mark the location of the outlets on the map.
 
 ### Installation
 
