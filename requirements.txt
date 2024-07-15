@@ -1,4 +1,5 @@
 Flask
+fastapi
 MarkupSafe
 SQLAlchemy
 beautifulsoup4
