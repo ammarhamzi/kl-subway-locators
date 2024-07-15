@@ -50,7 +50,7 @@ Create a file named config.py in the root directory of your project and add the 
 GOOGLE_MAPS_API_KEY = 'your_api_key_here'
 Create config.js to store your Google Maps API key:
 ```
-6. **Create a file named config.js in the static directory of your project and add the following code:**
+6. **Create a file named config.js in the root directory of your project and add the following code:**
 
 ```bash
 module.exports = {
