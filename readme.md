@@ -18,8 +18,8 @@ Follow these instructions to set up the project on your local machine.
 1. **Clone the repository:**
 
    ```bash
-   git clone https://github.com/ammarhamzi/subway-locators.git
-   cd subway-locators
+   git clone https://github.com/ammarhamzi/kl-subway-locators.git
+   cd kl-subway-locators
    ```
 
 2. **Set up a virtual environment in VSCode:**
