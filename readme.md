@@ -26,7 +26,7 @@ Follow these instructions to set up the project on your local machine.
 
    - Open the command palette with `Ctrl+Shift+P`.
    - Search for and select `Python: Create Environment`.
-   - Choose `Virtualenv` and then select the Python interpreter you want to use.
+   - Choose `Virtualenv` and then select the Python interpreter you want to use. (Pyhton11 waas used during development)
 
 3. **Activate the virtual environment:**
 
